@@ -2,12 +2,14 @@ package guru.springframework.sfgpetclinic.controllers;
 
 public class IndexController {
 
-    public String index(){
+	public String index() {
 
-        return "index";
-    }
+		return "index";
+	}
 
-    public String oupsHandler(){
-        return "notimplemented";
-    }
+	public String oupsHandler() {
+
+		throw new ValueNotFoundException();
+		// return "notimplemented";
+	}
 }
